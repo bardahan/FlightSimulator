@@ -3,8 +3,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
-
 public class ReadCSV { // עמודות של מערך 
 	
 	private String myfilename;
@@ -15,11 +13,9 @@ public class ReadCSV { // עמודות של מערך
 		this.readcsvfile();
 	}
 	
-	
 	public class Col{ // עמודה
 		private String name;
 		private ArrayList<Float> floats;
-		
 		
 		public Col(String name) {
 			
@@ -45,14 +41,10 @@ public class ReadCSV { // עמודות של מערך
 			this.floats = floats;
 		}
 	}
-	
-	
-	
+
 	public Col[] getCols() {
 		return cols;
 	}
-
-
 
 	public void setCols(Col[] cols) {
 		this.cols = cols;
